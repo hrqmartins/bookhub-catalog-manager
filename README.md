@@ -11,16 +11,12 @@ Este projeto foi construído para aplicar conceitos de engenharia de software fu
 
 ## 🚀 Funcionalidades
 
-- **Gerenciamento de Inventário**: Adição, remoção e consulta de títulos no acervo.
-- **Ordenação Inteligente**:
-  - Ordenação natural por Título (implementando `Comparable`).
-  - Ordenação por Preço ou Ano de Lançamento (implementando `Comparator`).
-- **Filtragem com Stream API**: Localização rápida de livros por autor ou por faixas de preço específicas.
-- **Relatórios Dinâmicos**: Exibição formatada e legível de todos os dados do acervo.
+- **Gestão de Inventário**: Cadastro e armazenamento dinâmico de livros.
+- **Busca por Título**: Algoritmo de busca com tratamento de `case-insensitivity` (ignora maiúsculas e minúsculas).
+- **Relatórios Formatados**: Exibição de dados com layout profissional e bordas decorativas no console.
+- **Encapsulamento Avançado**: Uso de listas não modificáveis para garantir que o catálogo não seja alterado externamente de forma indevida.
 
 ## 🛠️ Decisões Técnicas e Arquitetura
-
-Para atrair a atenção de recrutadores, o código foi estruturado seguindo princípios que garantem manutenibilidade:
 
 - **Java Collections Framework**: Escolha estratégica de `ArrayList` para acesso eficiente aos dados e manipulação dinâmica.
 - **Encapsulamento Rigoroso**: Proteção das coleções internas para evitar efeitos colaterais (uso de métodos que retornam cópias defensivas ou listas não modificáveis).
